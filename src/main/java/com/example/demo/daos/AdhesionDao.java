@@ -1,16 +1,15 @@
 package com.example.demo.daos;
 
-import javax.persistence.*;
 import java.io.Serializable;
 import java.util.Date;
 
-public class Adhesion implements Serializable {
+public class AdhesionDao implements Serializable {
 
-    EtudiantClubKey  id;
+    EtudiantClubKeyDao id;
 
-    Etudiant etudiant;
+    EtudiantDao etudiantDao;
 
-    Club club;
+    ClubDao clubDao;
 
 
     private String statut;
@@ -19,28 +18,28 @@ public class Adhesion implements Serializable {
 
     //getters
 
-    public EtudiantClubKey getId() {
+    public EtudiantClubKeyDao getId() {
         return id;
     }
 
-    public void setId(EtudiantClubKey id) {
+    public void setId(EtudiantClubKeyDao id) {
         this.id = id;
     }
 
-    public Etudiant getEtudiant() {
-        return etudiant;
+    public EtudiantDao getEtudiant() {
+        return etudiantDao;
     }
 
-    public void setEtudiant(Etudiant etudiant) {
-        this.etudiant = etudiant;
+    public void setEtudiant(EtudiantDao etudiantDao) {
+        this.etudiantDao = etudiantDao;
     }
 
-    public Club getClub() {
-        return club;
+    public ClubDao getClub() {
+        return clubDao;
     }
 
-    public void setClub(Club club) {
-        this.club = club;
+    public void setClub(ClubDao clubDao) {
+        this.clubDao = clubDao;
     }
 
     public String getStatut() {

@@ -1,31 +1,31 @@
-package com.example.demo.daos;
+package com.example.demo.dtos;
 
 import javax.persistence.*;
 import java.io.Serializable;
-import java.sql.Time;
 import java.util.Date;
-import javax.persistence.UniqueConstraint;
 
-public class Reunion implements Serializable {
 
-    private int idReunion;
+public class EvenementDto implements Serializable {
+    private int idEvenement;
 
     private String Intitule;
 
     private String Responsable;
 
-    private Date date;
-
-    private Time horaire;
+    private Date dateDebut;
+    private Date dateFin;
 
     private String Lieu;
 
     private String Description;
 
+
+    private float budget;
     //getters
 
-    public int getIdReunion() {
-        return idReunion;
+
+    public int getIdEvenement() {
+        return idEvenement;
     }
 
     public String getIntitule() {
@@ -36,26 +36,29 @@ public class Reunion implements Serializable {
         return Responsable;
     }
 
-    public Date getDate() {
-        return date;
+    public Date getDateDebut() {
+        return dateDebut;
     }
 
-    public Time getHoraire() {
-        return horaire;
+    public Date getDateFin() {
+        return dateFin;
     }
 
     public String getLieu() {
         return Lieu;
     }
 
-    public String getDescription() {
+    public String getDescription(){
         return Description;
     }
 
+    public float getBudget() {
+        return budget;
+    }
     //setters
 
-    public void setIdAdmin(int idAdmin) {
-        this.idReunion = idAdmin;
+    public void setIdEvenement(int idEvenement) {
+        this.idEvenement = idEvenement;
     }
 
     public void setIntitule(String intitule) {
@@ -66,12 +69,12 @@ public class Reunion implements Serializable {
         Responsable = responsable;
     }
 
-    public void setDate(Date date) {
-        this.date = date;
+    public void setDateDebut(Date dateDebut) {
+        this.dateDebut = dateDebut;
     }
 
-    public void setHoraire(Time horaire) {
-        this.horaire = horaire;
+    public void setDateFin(Date dateFin) {
+        this.dateFin = dateFin;
     }
 
     public void setLieu(String lieu) {
@@ -80,5 +83,9 @@ public class Reunion implements Serializable {
 
     public void setDescription(String description) {
         Description = description;
+    }
+
+    public void setBudget(float budget) {
+        this.budget = budget;
     }
 }

@@ -1,4 +1,4 @@
-package com.example.demo.dtos;
+package com.example.demo.daos;
 import java.io.Serializable;
 import java.util.Date;
 
@@ -6,7 +6,8 @@ import javax.persistence.*;
 import javax.xml.crypto.Data;
 
 
-public class Etudiant implements Serializable {
+public class EtudiantDao implements Serializable {
+
     private int idE;
 
     private String nom;

@@ -1,9 +1,9 @@
-package com.example.demo.dtos;
+package com.example.demo.daos;
 
 import javax.persistence.*;
 import java.io.Serializable;
 
-public class User  implements Serializable {
+public class UserDao implements Serializable {
     private int idU;
 
     private String login;

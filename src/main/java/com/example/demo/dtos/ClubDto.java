@@ -4,7 +4,7 @@ import javax.persistence.*;
 import java.io.Serializable;
 import java.util.Date;
 
-public class Club implements Serializable {
+public class ClubDto implements Serializable {
     private int idClub;
 
     private String NomC;

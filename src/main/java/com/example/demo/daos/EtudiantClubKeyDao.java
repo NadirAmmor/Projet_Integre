@@ -1,11 +1,11 @@
-package com.example.demo.dtos;
+package com.example.demo.daos;
 
 import javax.persistence.Column;
 import javax.persistence.Embeddable;
 import javax.persistence.Id;
 import java.io.Serializable;
 
-public class EtudiantClubKey implements Serializable {
+public class EtudiantClubKeyDao implements Serializable {
 
     private int IdEtudiant;
 

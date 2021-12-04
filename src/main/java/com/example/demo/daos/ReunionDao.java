@@ -1,31 +1,31 @@
-package com.example.demo.dtos;
+package com.example.demo.daos;
 
 import javax.persistence.*;
 import java.io.Serializable;
+import java.sql.Time;
 import java.util.Date;
+import javax.persistence.UniqueConstraint;
 
+public class ReunionDao implements Serializable {
 
-public class Evenement implements Serializable {
-    private int idEvenement;
+    private int idReunion;
 
     private String Intitule;
 
     private String Responsable;
 
-    private Date dateDebut;
-    private Date dateFin;
+    private Date date;
+
+    private Time horaire;
 
     private String Lieu;
 
     private String Description;
 
-
-    private float budget;
     //getters
 
-
-    public int getIdEvenement() {
-        return idEvenement;
+    public int getIdReunion() {
+        return idReunion;
     }
 
     public String getIntitule() {
@@ -36,29 +36,26 @@ public class Evenement implements Serializable {
         return Responsable;
     }
 
-    public Date getDateDebut() {
-        return dateDebut;
+    public Date getDate() {
+        return date;
     }
 
-    public Date getDateFin() {
-        return dateFin;
+    public Time getHoraire() {
+        return horaire;
     }
 
     public String getLieu() {
         return Lieu;
     }
 
-    public String getDescription(){
+    public String getDescription() {
         return Description;
     }
 
-    public float getBudget() {
-        return budget;
-    }
     //setters
 
-    public void setIdEvenement(int idEvenement) {
-        this.idEvenement = idEvenement;
+    public void setIdAdmin(int idAdmin) {
+        this.idReunion = idAdmin;
     }
 
     public void setIntitule(String intitule) {
@@ -69,12 +66,12 @@ public class Evenement implements Serializable {
         Responsable = responsable;
     }
 
-    public void setDateDebut(Date dateDebut) {
-        this.dateDebut = dateDebut;
+    public void setDate(Date date) {
+        this.date = date;
     }
 
-    public void setDateFin(Date dateFin) {
-        this.dateFin = dateFin;
+    public void setHoraire(Time horaire) {
+        this.horaire = horaire;
     }
 
     public void setLieu(String lieu) {
@@ -83,9 +80,5 @@ public class Evenement implements Serializable {
 
     public void setDescription(String description) {
         Description = description;
-    }
-
-    public void setBudget(float budget) {
-        this.budget = budget;
     }
 }

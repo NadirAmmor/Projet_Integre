@@ -5,7 +5,7 @@ import java.io.Serializable;
 import java.util.Date;
 
 
-public class Evenement implements Serializable {
+public class EvenementDao implements Serializable {
 
     private int idEvenement;
 

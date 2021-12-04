@@ -5,7 +5,7 @@ import java.io.File;
 import java.io.Serializable;
 
 
-public class Transaction implements Serializable {
+public class TransactionDto implements Serializable {
 
     private int IdBudget;
 

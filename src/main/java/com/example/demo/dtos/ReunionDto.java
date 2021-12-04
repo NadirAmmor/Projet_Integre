@@ -6,7 +6,7 @@ import java.sql.Time;
 import java.util.Date;
 import javax.persistence.UniqueConstraint;
 
-public class Reunion implements Serializable {
+public class ReunionDto implements Serializable {
 
     private int idReunion;
 

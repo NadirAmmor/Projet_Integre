@@ -1,16 +1,15 @@
 package com.example.demo.dtos;
 
-import javax.persistence.*;
 import java.io.Serializable;
 import java.util.Date;
 
-public class Adhesion implements Serializable {
+public class AdhesionDto implements Serializable {
 
-    EtudiantClubKey  id;
+    EtudiantClubKeyDto id;
 
-    Etudiant etudiant;
+    EtudiantDto etudiantDto;
 
-    Club club;
+    ClubDto clubDto;
 
 
     private String statut;
@@ -19,28 +18,28 @@ public class Adhesion implements Serializable {
 
     //getters
 
-    public EtudiantClubKey getId() {
+    public EtudiantClubKeyDto getId() {
         return id;
     }
 
-    public void setId(EtudiantClubKey id) {
+    public void setId(EtudiantClubKeyDto id) {
         this.id = id;
     }
 
-    public Etudiant getEtudiant() {
-        return etudiant;
+    public EtudiantDto getEtudiant() {
+        return etudiantDto;
     }
 
-    public void setEtudiant(Etudiant etudiant) {
-        this.etudiant = etudiant;
+    public void setEtudiant(EtudiantDto etudiantDto) {
+        this.etudiantDto = etudiantDto;
     }
 
-    public Club getClub() {
-        return club;
+    public ClubDto getClub() {
+        return clubDto;
     }
 
-    public void setClub(Club club) {
-        this.club = club;
+    public void setClub(ClubDto clubDto) {
+        this.clubDto = clubDto;
     }
 
     public String getStatut() {

@@ -4,7 +4,7 @@ import javax.persistence.*;
 import java.io.File;
 import java.io.Serializable;
 
-public class Transaction implements Serializable {
+public class TransactionDao implements Serializable {
     private int IdBudget;
 
     private float Amount;
